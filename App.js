@@ -4,6 +4,10 @@ import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import Login from './Screens/LoginScreen/Login';
 import * as SecureStore from "expo-secure-store";
 
+// Load environment variables
+import { CLERK_PUBLISHABLE_KEY } from "@env";
+
+
 const tokenCache = {
   async getToken(key) {
     try {
@@ -24,7 +28,7 @@ const tokenCache = {
 export default function App() {
   return (
    <ClerkProvider
-      publishableKey='pk_test_cG9ldGljLXdhcnRob2ctMzQuY2xlcmsuYWNjb3VudHMuZGV2JA'
+      publishableKey={CLERK_PUBLISHABLE_KEY}
       tokenCache={tokenCache}
       >
     <View style={styles.container}>
