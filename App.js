@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
+import { NavigationContainer } from '@react-navigation/native';
 import Login from './Screens/LoginScreen/Login';
 import * as SecureStore from "expo-secure-store";
 
 // Load environment variables
 import { CLERK_PUBLISHABLE_KEY } from "@env";
+import TabNavigation from './Navigations/TabNavigation';
 
 
 const tokenCache = {
@@ -34,7 +36,9 @@ export default function App() {
     <View style={styles.container}>
         {/* Sign In Component */}
         <SignedIn>
-          <Text>You are Signed in</Text>
+          <NavigationContainer>
+             <TabNavigation />
+          </NavigationContainer>
         </SignedIn>
         
         {/* Sign out Component */}
