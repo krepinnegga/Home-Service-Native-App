@@ -19,10 +19,10 @@ const Header = () => {
                 />
 
                 <View>
-                    <Text style={{color:Colors.WHITE}}>
+                    <Text style={{color:Colors.WHITE, fontFamily:"outfit"}}>
                         Welcome,
                     </Text>
-                    <Text style={{color:Colors.WHITE, fontSize:20}}>
+                    <Text style={{color:Colors.WHITE, fontSize:20, fontFamily:"outfit-medium"}}>
                         {user?.firstName}
                     </Text>
                 </View>
