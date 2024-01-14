@@ -28,7 +28,8 @@ const TabNavigation = () => {
             ),
             tabBarIcon:({color, size}) => (
                 <Feather name="home" size={size} color={color} />
-            )
+            ),
+            headerShown: false
           }}
        />
       <Tab.Screen 
@@ -42,7 +43,8 @@ const TabNavigation = () => {
             ),
             tabBarIcon:({color, size}) => (
                 <Feather name="bookmark" size={size} color={color} />
-            )
+            ),
+            headerShown: false
           }}
        />
       <Tab.Screen 
@@ -56,7 +58,8 @@ const TabNavigation = () => {
             ),
             tabBarIcon:({color, size}) => (
                 <Feather name="user" size={size} color={color} />
-            )
+            ),
+            headerShown: false
           }}
       />
     </Tab.Navigator>
