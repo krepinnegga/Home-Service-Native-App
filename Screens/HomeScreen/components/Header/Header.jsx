@@ -81,7 +81,8 @@ const styles = StyleSheet.create({
         backgroundColor:Colors.WHITE,
         borderRadius:8,
         width: "85%",
-        fontSize: 16
+        fontSize: 16,
+        fontFamily: "outfit"
     },
     searchContainer:{
         marginTop: 15,
