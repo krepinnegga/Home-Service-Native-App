@@ -3,6 +3,7 @@ import React from 'react'
 import Header from './components/Header/Header'
 import Slider from './components/Slider/Slider'
 import Categories from './components/Categories/Categories'
+import BusinessList from './components/BusinessList/BusinessList'
 
 const HomeScreen = () => {
   return (
@@ -17,6 +18,9 @@ const HomeScreen = () => {
        
        {/* Categories */}
       <Categories />
+
+      {/* BusinessList */}
+      <BusinessList />
     </View>
     </View>
   )
