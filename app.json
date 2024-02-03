@@ -28,6 +28,7 @@
     },
     "extra": {
       "clerkPublishableKey": "@env.CLERK_PUBLISHABLE_KEY"
-    }
+    },
+    "scheme": "homeServiceApp"
   }
 }
