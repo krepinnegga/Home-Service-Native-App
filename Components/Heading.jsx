@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     header:{
         fontSize:20,
         fontFamily:'outfit-medium',
-        marginBottom:5,
+        marginBottom:10,
        },
     container:{
       display:'flex',
