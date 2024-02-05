@@ -21,7 +21,6 @@ const BusinessListItem = ({business}) => {
           fontSize:10,
           padding:3,
           color:Colors.PRIMARY,
-          backgroundColor:Colors.PRIMARY_LIGHT,
           borderRadius:3,
           alignSelf:'flex-start',
           paddingHorizontal:7

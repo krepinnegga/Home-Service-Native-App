@@ -1,5 +1,5 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../Screens/HomeScreen/HomeScreen';
+import HomeNavigation from './HomeNavigation';
 import BookingScreen from '../Screens/BookingScreen/BookingScreen';
 import ProfileScreen from '../Screens/ProfileScreen/ProfileScreen';
 import { Text } from 'react-native';
@@ -19,7 +19,7 @@ const TabNavigation = () => {
     >
       <Tab.Screen 
          name="Home" 
-         component={HomeScreen} 
+         component={HomeNavigation} 
          options={{
             tabBarLabel:({color}) => (
                 <Text style={{color:color, fontSize:12, marginTop:-7}}>
