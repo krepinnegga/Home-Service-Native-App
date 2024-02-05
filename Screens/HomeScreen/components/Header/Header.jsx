@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput} from 'react-native'
 import React from 'react'
 import { useUser } from '@clerk/clerk-expo'
 import Colors from '../../../../Utils/Colors';
@@ -21,10 +21,12 @@ const Header = () => {
                 <View>
                     <Text style={{color:Colors.WHITE, fontFamily:"outfit"}}>
                         Welcome,
-                    </Text>
-                    <Text style={{color:Colors.WHITE, fontSize:20, fontFamily:"outfit-medium"}}>
+                          {" "}
+                        <Text style={{color:Colors.WHITE, fontFamily:"outfit-medium"}}>
                         {user?.firstName}
                     </Text>
+                    </Text>
+                    
                 </View>
             </View>
            <Feather name="bookmark" size={24} color="white" />
@@ -53,7 +55,7 @@ export default Header
 const styles = StyleSheet.create({
     container:{
         padding: 20,
-        paddingTop: 40,
+        paddingTop: 50,
         backgroundColor: Colors.PRIMARY,
         borderBottomLeftRadius: 25,
         borderBottomRightRadius: 25
@@ -94,6 +96,6 @@ const styles = StyleSheet.create({
     searchBtn:{
         backgroundColor:Colors.WHITE,
         padding:10,
-        borderRadius:8,
+        borderRadius: 8,
     }
 })
